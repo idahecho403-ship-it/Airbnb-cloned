@@ -71,12 +71,12 @@ body{
 .dropdown{
     display: none;
     position: absolute;
-    top: 100%;
-    /* right: 0; */
-    right: 10px;
-    left:auto;
-    /* width: 250px; */
-    width: 220px;
+    /* top: 100%; */
+    top: 55px;
+    right:0px;
+    width:min(250px, 90vw);
+    max-width: 90vw; 
+    z-index: 1000;
     background: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     overflow: hidden;
