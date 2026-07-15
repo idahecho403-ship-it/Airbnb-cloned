@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background: #f7f7f7;
+    color: #222;
+    font-weight: lighter;
+  
+}
+
+/* NAVBAR */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+    background: white;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 35px;
+}
+
+.icons{
+    display: flex;
+    gap: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* HERO */
+.hero{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.hero h1{
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    
+}
+
+.search-box{
+    width: 600px;
+    height: 70px;
+    background:white;
+    margin: auto;
+    border-radius:999px;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.search-box input{
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+.search-box button{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #ff0066;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* TABS */
+.tabs{
+    display: flex;
+    gap: 30px;
+    margin: 70px 140px 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+}
+
+.tabs a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.tabs .active{
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 12px;
+}
+
+/* SUPPORT BOX */
+.support-box{
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.support-box h2{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.support-box p{
+    font-size: 18px;
+    color: #555;
+}
+
+.login-btn{
+    background: #ff0066;
+    color: white;
+    border: none;
+    padding: 18px 60px;
+    border-radius: 12px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* GUIDES SECTION */
+
+.guides{
+    width: 80%;
+    margin: 50px auto;
+}
+
+.guide-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+.guide-header h1{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.guide-header a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* CARDS */
+
+.guide-cards{
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 260px;
+}
+
+.card img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card img:hover{
+    transform: scale(1.05);
+}
+
+.card h3{
+    margin-top: 14px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* TOP ARTICLES */
+.top-articles{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.top-articles h2{
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.articles-container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 40px;
+}
+
+.article{
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.article a{
+    font-size: 15px;
+    margin-bottom: 12px;
+    color: #222;
+    text-decoration: underline;
+    line-height: 1,4;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.article p{
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* EXPLORE MORE */
+.container{
+   width: fit-content;
+   margin: auto;
+}
+
+.container h1{
+    margin-top: 25px;
+    margin-bottom: 0px;
+    margin-left: 120px;
+    font-size: 30px;
+    font-weight: 500;
+    color: #222;
+}
+
+.explore-section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: flex-start;
+}
+
+/* CARDS */
+.card{
+    width: 380px;
+    height: 100%;
+    background: #f7f7f7;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content{
+    background: #222;
+    color: white;
+    padding: 22px;
+}
+
+.card-content h3{
+    margin-bottom: 0px;
+    font-size: 22px;
+}
+
+.card-content p{
+    font-size: 16px;
+}
+
+/* CONTACT BOX */
+.contact-box{
+    width: 300px;
+    padding-top: 40px;
+}
+
+.contact-box h2{
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.contact-box p{
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.contact-btn{
+    width: 100px;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #f2f2f2;
+    font-size: 18px;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.contact-btn:hover{
+    background: #9b9b9b;
+    color: white;
+}
+
+.feedback{
+    color: #222;
+}
+
+.feedback a{
+    color: #222;
+}
+
+
+/* TOP FOOTER */
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 80px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+
+.footer-column h3{
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer-column p{
+    margin-bottom: 15px;
+    color: black;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.footer-column p:hover{
+    text-decoration: underline;
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+.left-side{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 14px;
+    text-decoration: #222;
+}
+
+.right-side{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 14px;
+}
+
+.icons{
+    display:flex;
+    gap: 15px;
+    font-size: 18px;
+}
+
+
+/* Responsive */
+img{max-width:100%;height:auto}
+@media(max-width:768px){
+.navbar,.nav-right,.guide-header,.support-box,.footer-bottom{flex-direction:column;align-items:flex-start;gap:15px}
+.login-card,.search-box,.support-box,.guides,.top-articles,.container,.contact-box{width:100%!important;max-width:100%!important}
+.footer-container,.articles-container,.locations{grid-template-columns:1fr!important}
+.homes-container,.guide-cards,.explore-section{flex-wrap:wrap}
+.card{width:100%!important;min-width:0!important}
+.tabs{margin:20px;overflow:auto;white-space:nowrap}
+}
