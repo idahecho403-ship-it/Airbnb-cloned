@@ -68,32 +68,18 @@ body{
     border-radius: 25px;
 }
 
-/* .dropdown{
+.dropdown{
     display: none;
     position: absolute;
-    top: 100%;
+    top: 50%;
     right:0px;
     width:250px;
     background: #fff;
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     overflow: hidden;
     border-radius: 15px;
-} */
-
-@media (max-width:768px){
-
-    .menu{
-        position: relative;
-    }
-
-    .dropdown{
-        right: 10px;
-        left: auto;
-        width: 220px;
-        max-width: calc(100vw - 20px);
-    }
-
 }
+
 
 .dropdown a{
     display: block;
